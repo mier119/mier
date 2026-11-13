@@ -830,7 +830,7 @@
             <div class="tags">
                 <!-- 改成原生 JS 打开，防止被浏览器拦截 -->
                 <span class="tag" onclick="window.open('https://www.kdocs.cn/l/cjkxZuU6MriK', '_blank')">病恋</span>
-                <span class="tag" onclick="window.open('https://www.qq.com', '_blank')">虚恋</span>
+                <span class="tag" onclick="window.open('https://www.qq.com', '_blank')">待解锁</span>
                 <span class="tag" onclick="window.open('https://www.163.com', '_blank')">树洞</span>
                 <span class="tag" onclick="window.open('https://www.zhihu.com', '_blank')">纯文</span>
             </div>
@@ -839,10 +839,6 @@
             <div class="sub-card">
                 <div class="sub-card-title">▸ 病恋风格</div>
                 <div class="sub-card-desc">中低恋，诡辩，恶趣味，风格随机掉落</div>
-            </div>
-            <div class="sub-card">
-                <div class="sub-card-title">▸ 虚恋风格</div>
-                <div class="sub-card-desc">日常，恶劣</div>
             </div>
             <div class="sub-card">
                 <div class="sub-card-title">▸ 树洞风格</div>
@@ -866,7 +862,7 @@
 
         <div class="chat-quick">
             <span class="quick-tag" onclick="quickSend('病恋')">病恋</span>
-            <span class="quick-tag" onclick="quickSend('虚恋')">虚恋</span>
+            <span class="quick-tag" onclick="quickSend('待解锁')">待解锁</span>
             <span class="quick-tag" onclick="quickSend('树洞')">树洞</span>
             <span class="quick-tag" onclick="quickSend('纯文')">纯文</span>
         </div>
@@ -1100,7 +1096,7 @@ let chatting = false;
 /* 关键词 & 链接配置 */
 const SKILL_LINKS = [
     { keys: ['病恋'], text: ' 点击查看病恋详情', url: 'https://www.kdocs.cn/l/cjkxZuU6MriK' },
-    { keys: ['虚恋'], text: ' 点击查看虚恋详情', url: 'https://www.qq.com' },
+    { keys: ['虚恋'], text: ' 点击查看xx详情', url: 'https://www.qq.com' },
     { keys: ['树洞'], text: ' 点击查看树洞详情', url: 'https://www.163.com' },
     { keys: ['纯文'], text: ' 点击查看纯文详情', url: 'https://www.zhihu.com' }
 ];
@@ -1273,7 +1269,7 @@ function initChat(){
     const row = appendRow('ai');
     const bubble = document.createElement('div');
     bubble.className = 'bubble';
-    bubble.textContent = '在。可以随便聊聊，也可以发送“病恋”“虚恋”等关键词。';
+    bubble.textContent = '在。可以随便聊聊，也可以发送技能等关键词。';
     row.appendChild(bubble);
     scrollChat();
 }
